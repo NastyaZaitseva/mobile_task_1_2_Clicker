@@ -39,7 +39,7 @@
 
     <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <Button
@@ -71,4 +71,19 @@
         android:textSize="20sp" />
 
 </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorAccent"
+            android:src="@drawable/robot" />
+
+    </LinearLayout>
     </LinearLayout>

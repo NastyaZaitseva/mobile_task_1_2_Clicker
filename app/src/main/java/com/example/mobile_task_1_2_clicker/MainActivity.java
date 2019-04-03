@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_minus;
     Button btn_null;
     int count = 0;
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_null.setOnClickListener(this);
 
         mainTextView = findViewById(R.id.main_textview);
+
+        imageButton=findViewById(R.id.imageButton);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imageButton.setImageResource(R.drawable.robot2);
+
+            }
+        });
+
+
+
     }
 
 
@@ -47,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_null:  mainTextView.setText(String.valueOf(count=0));
                 break;
+
+
         }
     }
 
