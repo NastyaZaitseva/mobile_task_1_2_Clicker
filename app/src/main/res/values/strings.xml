@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">mobile_task_1_2_Clicker</string>
+    <string name="app_name">Симулятор нежных нажатий</string>
+    <string name="btn_text">Нажми меня нежно</string>
+    <string name="text">Количество нежных нажатий:</string>
 </resources>
