@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     TextView mainTextView;
     Button btn1;
+    Button btn_minus;
+    Button btn_null;
     int count = 0;
 
     @Override
@@ -21,18 +23,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn1 = findViewById(R.id.btn);
         btn1.setOnClickListener(this);
 
+        btn_minus =findViewById(R.id.btn_minus);
+        btn_minus.setOnClickListener(this);
+
+        btn_null =findViewById(R.id.btn_null);
+        btn_null.setOnClickListener(this);
+
         mainTextView = findViewById(R.id.main_textview);
     }
 
 
 
     @Override
-    public void onClick (View v){
-        mainTextView.setText(String.valueOf(++count));
+    public void onClick (View v) {
+        switch (v.getId()) {
+            case R.id.btn:
+                mainTextView.setText(String.valueOf(++count));
+                break;
+
+            case R.id.btn_minus:  if (count>0){
+                mainTextView.setText(String.valueOf(--count));
+                break;}
+
+            case R.id.btn_null:  mainTextView.setText(String.valueOf(count=0));
+                break;
+        }
     }
-
-
-
 
 
 }
