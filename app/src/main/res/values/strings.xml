@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">Симулятор нежных нажатий</string>
-    <string name="btn_text">Нажми меня нежно</string>
-    <string name="text">Количество нежных нажатий:</string>
-    <string name="btn_minus">Вычти жестко</string>
-    <string name="btn_null">Обнули полностью</string>
+
 </resources>
